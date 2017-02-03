@@ -3,20 +3,13 @@
 		CEDR Conf.
 			</title><meta charset="utf-8" />
 
-			<link href="../Scripts/bootstrap.min.css" rel="stylesheet" />
-			<base href="/" />
+			<link href="../Scripts/bootstrap.min.css" rel="stylesheet" /> -->
 
 
 
 
-
-<!--
-		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
--->
 	</head>
-	<body>
+	<body ng-app="routerApp">
 			<nav class="navbar navbar-default navbar-fixed-top">
 					<div class="container-fluid">
 							<div class="navbar-header">
@@ -24,43 +17,43 @@
 											<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
 											<span class="icon-bar"></span> <span class="icon-bar"></span>
 									</button>
-									<a href="#" class="navbar-brand">CSC2016</a>
+									<a ui-sref="home" class="navbar-brand">CSC2016</a>
 							</div>
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
 									<ul class="nav navbar-nav">
 											<li class="dropdown">
 													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sessions <span class="caret"></span></a>
 													<ul class="dropdown-menu">
-															<li><a href="sessions/sessions.html">Session List</a></li>
-															<li><a href="sessions/form.html">Session Manager</a></li>
+															<li><a ui-sref="sessionlist">Session List</a></li>
+															<li><a ui-sref="sessionform">Session Manager</a></li>
 													</ul>
 											</li>
 											<li class="dropdown">
 													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="caret"></span></a>
 													<ul class="dropdown-menu">
-															<li><a href="users.aspx">User List</a></li>
-															<li><a href="userManager.aspx">User Manager</a></li>
+															<li><a ui-sref="userlist">User List</a></li>
+															<li><a ui-sref="usermanger">User Manager</a></li>
 													</ul>
 											</li>
 											<li class="dropdown">
 													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Exhibitors <span class="caret"></span></a>
 													<ul class="dropdown-menu">
-															<li><a href="exhibitors.aspx">Exhibitor List</a></li>
-															<li><a href="exhibitorManager.aspx">Exhibitor Manager</a></li>
+															<li><a ui-sref="elist">Exhibitor List</a></li>
+															<li><a ui-sref="emanger">Exhibitor Manager</a></li>
 													</ul>
 											</li>
 											<li class="dropdown">
 													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Event Info <span class="caret"></span></a>
 													<ul class="dropdown-menu">
-															<li><a href="questions.aspx">Info List</a></li>
-															<li><a href="questionManager.aspx">Info Manager</a></li>
+															<li><a ui-sref="infolist">Info List</a></li>
+															<li><a ui-sref="infomanger">Info Manager</a></li>
 													</ul>
 											</li>
 											<li class="dropdown">
 													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alerts <span class="caret"></span></a>
 													<ul class="dropdown-menu">
-															<li><a href="alerts.aspx">Alert List</a></li>
-															<li><a href="alertManager.aspx">Alert Manager</a></li>
+															<li><a ui-sref="alertlist">Alert List</a></li>
+															<li><a ui-sref="alertmanger">Alert Manager</a></li>
 													</ul>
 											</li>
 											<li><a href="logout.aspx">Log Out</a></li>
@@ -70,40 +63,27 @@
     </nav>
 
 
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    <div ui-view></div>
+
+</div>
+
 		    <script src="../Scripts/angular.min.js"></script>
 				<script src="../Scripts/angular-resource.min.js"></script>
     		<script src="../Scripts/angular-ui-router.min.js"></script>
+				<script src="app.js"></script>
+				<script src="../Scripts/bootstrap.min.js"></script>
 				<script src="../Scripts/jquery.min.js"></script>
 				<script src="../Scripts/bootstrap.min.js"></script>
 
 
-				<script>
-        (function () {
-            angular
-                .module('app')
-                .controller('IndexCtrl', IndexCtrl);
-
-            function IndexCtrl($state, authService, userContext) {
-                this.logout = function() {
-                    authService.logOut();
-                    $state.go('applicant');
-                };
-
-                console.log('fired');
-
-                this.user = userContext.getUser();
-
-                this.isLoggedIn = function () {
-
-                    return authService.isLoggedIn()
-                }
-            }
-
-        })();
-    </script>
 
 	</body>
 </html>
 
 
 
+''
