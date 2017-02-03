@@ -1,0 +1,159 @@
+
+	<head><title>
+		Sessions
+			</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+			<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+	</head>
+<!--==========================================================Header========================================-->
+
+
+
+
+
+
+
+
+
+	  <div class="col-md-12">
+        <br /><br /><br />
+<form method="post" action="./sessionManager.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+
+			<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+			<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+
+    <h1>Session Manager</h1>
+    <div id="ContentPlaceHolder1_ValidationSummary1" style="color:Red;display:none;">
+
+</div>
+    <table class="table">
+        <tr>
+            <td>Session<span id="ContentPlaceHolder1_RequiredFieldValidator1" style="color:Red;visibility:hidden;">*</span></td>
+            <td><input name="ctl00$ContentPlaceHolder1$session" type="text" id="ContentPlaceHolder1_session" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><textarea name="ctl00$ContentPlaceHolder1$descr" rows="2" cols="20" id="ContentPlaceHolder1_descr" class="form-control" style="height:150px;width:100%;">
+</textarea></td>
+        </tr>
+        <tr>
+            <td>Start Date<span id="ContentPlaceHolder1_RequiredFieldValidator3" style="color:Red;visibility:hidden;">*</span></td>
+            <td><input name="ctl00$ContentPlaceHolder1$startdate" type="text" id="ContentPlaceHolder1_startdate" class="form-control dates" /></td>
+        </tr>
+        <tr>
+            <td>End Date<span id="ContentPlaceHolder1_RequiredFieldValidator4" style="color:Red;visibility:hidden;">*</span></td>
+            <td><input name="ctl00$ContentPlaceHolder1$enddate" type="text" id="ContentPlaceHolder1_enddate" class="form-control dates" /></td>
+        </tr>
+        <tr>
+            <td>Room<span id="ContentPlaceHolder1_CompareValidator1" style="color:Red;visibility:hidden;">*</span>
+            </td>
+            <td><select name="ctl00$ContentPlaceHolder1$rooms" id="ContentPlaceHolder1_rooms" class="form-control">
+								<option value="12">America&#39;s Cup A&amp;B (Fourth level)</option>
+								<option value="13">America&#39;s Cup C&amp;D (Fourth level)</option>
+								<option value="5">Bankers Hill (Third level)</option>
+								<option value="6">Cortez Hill A&amp;B (Third level)</option>
+								<option value="7">Cortez Hill C (Third level)</option>
+								<option value="11">Golden Hill (Third level)</option>
+								<option value="14">Grand Ballroom (Lobby level)</option>
+								<option value="8">Hill Crest A&amp;B (Third level)</option>
+								<option value="9">Hill Crest C&amp;D (Third level)</option>
+								<option value="1">Mission Beach A (Third level)</option>
+								<option value="2">Mission Beach B&amp;C (Third level)</option>
+								<option value="4">Ocean Beach (Third level)</option>
+								<option value="3">Solana Beach (Third level)</option>
+								<option value="10">Torrey Hills (Third level)</option>
+								<option selected="selected" value="0">==== Select One =====</option>
+
+</select></td>
+        </tr>
+        <tr>
+            <td>System<span id="ContentPlaceHolder1_CompareValidator2" style="color:Red;visibility:hidden;">*</span></td>
+            <td><select name="ctl00$ContentPlaceHolder1$systems" id="ContentPlaceHolder1_systems" class="form-control">
+								<option value="7">CEDR</option>
+								<option value="2">EDJOIN</option>
+								<option value="8">Event</option>
+								<option value="4">General</option>
+								<option value="6">Pro Dev</option>
+								<option value="1">SEIS</option>
+								<option value="5">SST Online</option>
+								<option value="3">Tech</option>
+								<option selected="selected" value="0">==== Select One =====</option>
+
+</select></td>
+        </tr>
+        <tr>
+            <td>Primary Presenter</td>
+            <td><select name="ctl00$ContentPlaceHolder1$presenter1" id="ContentPlaceHolder1_presenter1" class="form-control">
+								<option value="3931">Aaron Toczynski</option>
+								<option value="3960">Abey Mukkananchery</option>
+								<option value="3881">Acela Comerford</option>
+								<option value="2977">Ada Ceballos </option>
+								<option value="3125">Ada Reid-Watson</option>
+								<option value="3273">Adam Nieves</option>
+								<option value="3829">Adrian Perez</option>
+								<option value="3593">Agnes Chow</option>
+								<option value="3148">Aimee Miculian</option>
+								<option value="3312">Aimee Myers</option>
+								<option selected="selected" value="0">==== Select One =====</option>
+
+</select></td>
+
+</tr>
+        <tr>
+            <td>Presenter</td>
+            <td><select name="ctl00$ContentPlaceHolder1$presenter2" id="ContentPlaceHolder1_presenter2" class="form-control">
+								<option value="3931">Aaron Toczynski</option>
+								<option value="3960">Abey Mukkananchery</option>
+								<option value="3881">Acela Comerford</option>
+								<option value="2977">Ada Ceballos </option>
+								<option value="3125">Ada Reid-Watson</option>
+								<option value="3273">Adam Nieves</option>
+								<option value="3829">Adrian Perez</option>
+								<option value="3832">Zack Schuster</option>
+								<option selected="selected" value="0">==== Select One =====</option>
+
+</select></td>
+        </tr>
+        <tr>
+            <td>Presenter</td>
+            <td><select name="ctl00$ContentPlaceHolder1$presenter3" id="ContentPlaceHolder1_presenter3" class="form-control">
+								<option value="3931">Aaron Toczynski</option>
+								<option value="3960">Abey Mukkananchery</option>
+								<option value="3881">Acela Comerford</option>
+								<option value="2977">Ada Ceballos </option>
+								<option value="3832">Zack Schuster</option>
+								<option selected="selected" value="0">==== Select One =====</option>
+
+</select></td>
+        </tr>
+        <tr>
+            <td>Presenter</td>
+            <td><select name="ctl00$ContentPlaceHolder1$presenter4" id="ContentPlaceHolder1_presenter4" class="form-control">
+								<option value="3931">Aaron Toczynski</option>
+								<option value="3960">Abey Mukkananchery</option>
+								<option value="3881">Acela Comerford</option>
+								<option value="2977">Ada Ceballos </option>
+								<option value="3711">Zachary Johnson</option>
+								<option value="3832">Zack Schuster</option>
+								<option selected="selected" value="0">==== Select One =====</option>
+
+</select></td>
+        </tr>
+    </table>
+    <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Save" onclick="" id="ContentPlaceHolder1_btnSubmit" class="btn btn-primary" /> <input type="submit" name="ctl00$ContentPlaceHolder1$btnCancel" value="Cancel" id="ContentPlaceHolder1_btnCancel" class="btn btn-default" />
+
+
+</form>
+
+
+
+    </div>
+
+
+

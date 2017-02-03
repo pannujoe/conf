@@ -1,0 +1,111 @@
+	<head><title>
+		Sessions
+			</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+			<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+	</head>
+<!--==========================================================Header========================================-->
+
+<div class="col-md-12">
+        <br /><br /><br />
+    <form method="post" action="./exhibitorManager.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+ <h1>Exhibitor Manager</h1>
+    <div id="ContentPlaceHolder1_ValidationSummary1" style="color:Red;display:none;">
+
+</div>
+    <table class="table">
+        <tr>
+            <td>Company<span id="ContentPlaceHolder1_RequiredFieldValidator1" style="color:Red;visibility:hidden;">*</span></td>
+            <td><input name="ctl00$ContentPlaceHolder1$exhibitor" type="text" id="ContentPlaceHolder1_exhibitor" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><textarea name="ctl00$ContentPlaceHolder1$description" rows="2" cols="20" id="ContentPlaceHolder1_description" class="form-control" style="height:150px;width:100%;">
+</textarea></td>
+        </tr>
+        <tr>
+            <td>Logo</td>
+            <td><input name="ctl00$ContentPlaceHolder1$logo" type="text" id="ContentPlaceHolder1_logo" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Advertisement</td>
+            <td><input name="ctl00$ContentPlaceHolder1$advertisement" type="text" id="ContentPlaceHolder1_advertisement" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Website</td>
+            <td><input name="ctl00$ContentPlaceHolder1$website" type="text" id="ContentPlaceHolder1_website" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Booth</td>
+            <td><input name="ctl00$ContentPlaceHolder1$booth" type="text" id="ContentPlaceHolder1_booth" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Tier<span id="ContentPlaceHolder1_CompareValidator1" style="color:Red;visibility:hidden;">*</span></td>
+            <td><select name="ctl00$ContentPlaceHolder1$tiers" id="ContentPlaceHolder1_tiers" class="form-control">
+	<option value="1">Platinum</option>
+	<option value="2">Gold</option>
+	<option value="3">Silver</option>
+	<option value="4">Bronze</option>
+	<option value="5">Express</option>
+	<option selected="selected" value="0">==== Select One =====</option>
+
+</select></td>
+        </tr>
+        <tr>
+            <td>Vendor</td>
+            <td><select name="ctl00$ContentPlaceHolder1$vendor1" id="ContentPlaceHolder1_vendor1" class="form-control">
+	<option value="3952">BrainPOP, Denise Polt</option>
+	<option value="3943">Brandman University, George Watson</option>
+	<option value="3942">Brandman University, Nicole Beall </option>
+<option selected="selected" value="0">==== Select One =====</option>
+
+</select></td>
+        </tr>
+        <tr>
+            <td>Vendor</td>
+            <td><select name="ctl00$ContentPlaceHolder1$vendor2" id="ContentPlaceHolder1_vendor2" class="form-control">
+	<option value="3952">BrainPOP, Denise Polt</option>
+	<option value="3943">Brandman University, George Watson</option>
+	<option value="3942">Brandman University, Nicole Beall </option>
+	<option value="3956">California County Educational Technology Consortium, Cindy Dunlevy</option>
+	<option value="3958">California County Educational Technology Consortium, Laura Smith</option>
+	<option value="3957">California County Educational Technology Consortium, Oscar Ramirez</option>
+	<option value="3618">CEDR Systems, Joseph Raco</option>
+
+
+</select></td>
+        </tr>
+        <tr>
+            <td>Vendor</td>
+            <td><select name="ctl00$ContentPlaceHolder1$vendor3" id="ContentPlaceHolder1_vendor3" class="form-control">
+	<option value="3952">BrainPOP, Denise Polt</option>
+	<option value="3943">Brandman University, George Watson</option>
+	<option value="3942">Brandman University, Nicole Beall </option>
+	<option value="3956">California County Educational Technology Consortium, Cindy Dunlevy</option>
+	<option value="3958">California County Educational Technology Consortium, Laura Smith</option>
+
+</select></td>
+        </tr>
+        <tr>
+            <td>Vendor</td>
+            <td><select name="ctl00$ContentPlaceHolder1$vendor4" id="ContentPlaceHolder1_vendor4" class="form-control">
+	<option value="3952">BrainPOP, Denise Polt</option>
+	<option value="3943">Brandman University, George Watson</option>
+	<option value="3942">Brandman University, Nicole Beall </option>
+	<option value="3956">California County Educational Technology Consortium, Cindy Dunlevy</option>
+	<option value="3958">California County Educational Technology Consortium, Laura Smith</option>
+	<option value="3957">California County Educational Technology Consortium, Oscar Ramirez</option>
+<option value="4024">Teachers College of San Joaquin / SJCOE, Vicky DePrater </option>
+	<option selected="selected" value="0">==== Select One =====</option>
+
+</select></td>
+        </tr>
+    </table>
+    <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Save" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_btnSubmit" class="btn btn-primary" /> <input type="submit" name="ctl00$ContentPlaceHolder1$btnCancel" value="Cancel" id="ContentPlaceHolder1_btnCancel" class="btn btn-default" />
+</form>
+    </div>

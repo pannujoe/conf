@@ -1,0 +1,41 @@
+	<head><title>
+		Sessions
+			</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+			<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+	</head>
+<!--==========================================================Header========================================-->
+
+<div class="col-md-12">
+        <br /><br /><br />
+    <form method="post" action="./alertManager.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+
+
+    <h1>Session Manager</h1>
+    <div id="ContentPlaceHolder1_ValidationSummary1" style="color:Red;display:none;">
+
+</div>
+    <table class="table">
+        <tr>
+            <td>Subject<span id="ContentPlaceHolder1_RequiredFieldValidator1" style="color:Red;visibility:hidden;">*</span></td>
+            <td><input name="ctl00$ContentPlaceHolder1$subject" type="text" id="ContentPlaceHolder1_subject" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Body<span id="ContentPlaceHolder1_RequiredFieldValidator2" style="color:Red;visibility:hidden;">*</span></td>
+            <td><textarea name="ctl00$ContentPlaceHolder1$body" rows="2" cols="20" id="ContentPlaceHolder1_body" class="form-control">
+</textarea></td>
+        </tr>
+    </table>
+    <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Save" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_btnSubmit" class="btn btn-primary" /> <input type="submit" name="ctl00$ContentPlaceHolder1$btnCancel" value="Cancel" id="ContentPlaceHolder1_btnCancel" class="btn btn-default" />
+
+
+
+
+</script>
+</form>
+    </div>

@@ -1,0 +1,99 @@
+	<head><title>
+		Sessions
+			</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+			<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+	</head>
+<!--==========================================================Header========================================-->
+
+
+
+ <div class="col-md-12">
+        <br /><br /><br />
+    <form method="post" action="./users.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value=""/>
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4031B7D4" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="o5omPmCJNpTaG/fD7o6EcJvo71un24GHZ/fY8lQBIhJLCZ86lMN+VaNh2+rgNT7sB6/TMpuir12OKfiTklztP366LI+8w0N4X5W5CWIjW71L13iJGEYos7mmxLl6yxSf9hxjsYOfOQWQXJlDfy5A2w==" />
+</div>
+
+    <h1>Users</h1>
+    <div class="form-inline">
+        <div class="form-group">
+            <input name="ctl00$ContentPlaceHolder1$search" type="text" id="ContentPlaceHolder1_search" class="form-control" style="width:500px;" />
+        </div>
+        <input type="submit" name="ctl00$ContentPlaceHolder1$btnSearch" value="Search" id="ContentPlaceHolder1_btnSearch" class="btn btn-primary" />
+    </div>
+
+    <div>
+	<table class="table table-hover" cellspacing="0" id="ContentPlaceHolder1_users" style="width:100%;border-collapse:collapse;">
+		<thead>
+			<tr align="left">
+				<th scope="col">Name</th><th scope="col">Title</th><th scope="col">Org</th><th scope="col">Type</th><th scope="col">&nbsp;</th><th scope="col">&nbsp;</th><th scope="col">Management</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>
+					    Adrian Perez
+				    </td><td>
+					    Web Developer
+				    </td><td>
+					    CEDR Systems
+				    </td><td>
+					    Staff
+				    </td><td>
+
+				    </td><td>
+
+				    </td><td>
+                        <a href='userManager.aspx?ID=3829' class="btn btn-primary">Edit</a>
+				    </td>
+			</tr><tr>
+				<td>
+					    Brett Owen
+				    </td><td>
+					    Web Developer
+				    </td><td>
+					    CEDR Systems
+				    </td><td>
+					    Staff
+				    </td><td>
+
+				    </td><td>
+
+				    </td><td>
+                        <a href='userManager.aspx?ID=3828' class="btn btn-primary">Edit</a>
+				    </td>
+			</tr><tr>
+<td>
+					    Cole Aschwanden
+				    </td><td>
+					    User Support Specialist
+				    </td><td>
+					    CEDR Systems
+				    </td><td>
+					    Staff
+				    </td><td>
+					    <a href="#" data-toggle="popover" data-html="true" data-trigger="hover" data-placement="top" data-content="<img src='http://www.cedrconf.org/presenters/cole_aschwanden.jpg' width='150'/>"><i class='glyphicon glyphicon-picture'></i></a>
+				    </td><td>
+					    <a href="#" data-toggle="popover" data-html="true" data-trigger="hover" data-placement="top" data-content="Cole Aschwanden has worked in the CEDR department at the San Joaquin County Office of Education for over 10 years. ..."><i class='glyphicon glyphicon-info-sign'></i></a>
+				    </td><td>
+                        <a href='userManager.aspx?ID=3663' class="btn btn-primary">Edit</a>
+				    </td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>
+
+    </form>
+    </div>

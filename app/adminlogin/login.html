@@ -1,0 +1,35 @@
+<head><title>
+		Sessions
+			</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+			<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+	</head>
+<!--==========================================================Header========================================-->
+
+
+
+ <form method="post" action="./" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+
+
+
+        <div class="col-md-12">
+        <h1>Administrator Login</h1>
+        <span id="message" style="color: red;"></span>
+        <table class="table">
+            <tr>
+                <td>Email<span id="RequiredFieldValidator1" style="color:Red;visibility:hidden;">*</span></td>
+                <td><input name="email" type="text" id="email" class="form-control" /></td>
+            </tr>
+            <tr>
+                <td>Password<span id="RequiredFieldValidator2" style="color:Red;visibility:hidden;">*</span></td>
+                <td><input name="password" type="password" id="password" class="form-control" /></td>
+            </tr>
+        </table>
+        <input type="submit" name="btnSubmit" value="Login" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnSubmit" class="btn btn-primary" />
+        </div>
+</form>
